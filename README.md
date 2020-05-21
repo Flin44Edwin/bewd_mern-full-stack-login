@@ -1,3 +1,5 @@
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/erika-dorset/bewd_mern-full-stack-login) 
+
 # MERN full stack login/logout example
 This is an example of a full stack application using React, Node.js, Express, MongoDB and Webpack.
 
