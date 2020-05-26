@@ -3,9 +3,9 @@ import { StyleSheet  , View , Image } from 'react';
 import axios from 'axios';
 
 
-const imageIcon4 = 'https://source.unsplash.com/164_6wVEHfI/';
+
 const imageIcon6 = 'https://source.unsplash.com/95YRwf6CNw8/';
-const imageIcon3= 'https://source.unsplash.com/2P9MMBx-6JY/';
+
 
 export default class Home extends Component {
     constructor() {
