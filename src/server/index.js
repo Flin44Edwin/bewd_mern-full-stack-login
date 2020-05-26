@@ -9,7 +9,7 @@ const withAuth = require('./middleware');
 
 const app = express();
 
-const secret = 'secret_should_not_be_in_git';
+const adlist = 'adlist_should_not_be_in_git';
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -87,7 +87,7 @@ app.post('/api/authenticate', function(req, res) {
         } else {
           // Issue token
           const payload = { email };
-          const token = jwt.sign(payload, secret, {
+          const token = jwt.sign(payload, adlist, {
             expiresIn: '1h'
           });
           res.cookie('token', token, { httpOnly: true }).sendStatus(200);

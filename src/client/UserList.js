@@ -43,7 +43,7 @@ class UserList extends Component {
         //return the list of users
         return (
             <div className="is-fluid">
-            <h1 className="navbar-item title is-1 has-text-primary has-text-weight-bold">List of Users</h1>
+            <h1 className="navbar-item title is-1 has-text-primary has-text-weight-bold"> Ads Listing</h1>
                 <hr />
                 {/*USER LIST*/}
                 <div>
@@ -52,10 +52,20 @@ class UserList extends Component {
                     </div>
                 </div>
                 {/*FOOTER*/}
-                <footer className="footer has-background-primary">
-                    <div className="content has-text-centered">
-                        <p className="has-text-white-bis"><strong>Random User API</strong> styled with Bulma.</p>
-                    </div>
+               <footer class="site-footer">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-6">
+                <p>Ads Directory raised €1.3million for charity by donating a portion of ad revenue to causes selected by its staff</p>
+               <p> This project was created to express my knowledge on react </p>
+                <p>&copy; 2020 Created by EDWIN ODEH</p>
+              </div>
+              </div>
+              </div>
+              </div>
+
+                    
                 </footer>
             </div>
 

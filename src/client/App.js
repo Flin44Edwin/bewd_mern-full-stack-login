@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 import withAuth from './withAuth';
 import Home from './Home';
-import Secret from './Secret';
+import Adlist from './Adlist';
 import Login from './Login';
 import Register from './Register';
 import UserList from './UserList';
@@ -40,7 +40,7 @@ class App extends Component {
 
                     <ul className="navbar-brand is-primary">
                         <li className="navbar-item has-background-primary"><Link to="/">Home</Link></li>
-                        <li className="navbar-item has-background-primary"><Link to="/secret">Secret</Link></li>
+                        <li className="navbar-item has-background-primary"><Link to="/adlist">Adlist</Link></li>
                         {this.state.loggedIn && <li className="navbar-item has-background-primary"><Link to="/userlist">UserList</Link></li>}
 
                         {!this.state.loggedIn && <li className="navbar-item has-background-primary"><Link to="/login">Login</Link></li>}
@@ -52,7 +52,7 @@ class App extends Component {
                     <Route path="/" exact component={Home} />
                     <Route path="/userlist" exact component={UserList} />
 
-                    <Route path="/secret" component={withAuth(Secret)} />
+                    <Route path="/adlist" component={withAuth(Adlist)} />
                     <Route path="/register" component={Register} />
                     <Route path="/login" render={(props) => <Login {...props} handleLogin={this.login} />} />
                     <Route path="/logout" render={this.logout} />

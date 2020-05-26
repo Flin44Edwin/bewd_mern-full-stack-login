@@ -42,8 +42,10 @@ export default class Login extends Component {
 
     render() {
         return (
+
+            <section className="randompage">
             <form onSubmit={this.onSubmit} className="container is-fluid">
-                <h1 className="title has-text-weight-bold has-text-primary is-1">Login Below!</h1>
+                <h1 className="headspace">Login Below!</h1>
                 <div className="field">
                     <label className="label">Email</label>
                     <div className="control">
@@ -55,9 +57,9 @@ export default class Login extends Component {
                             value={this.state.email}
                             onChange={this.handleInputChange}
                             required
-                        />
+                      />
                     </div>
-                    <p className="help">This is a help text</p>
+                    <p className="help">Enter your registered Email Address</p>
                 </div>
                 <div className="field">
                     <label className="label">Password</label>
@@ -72,10 +74,32 @@ export default class Login extends Component {
                             required
                         />
                     </div>
-                    <p className="help">This is a help text</p>
+                    <p className="help">Enter your Password</p>
                 </div>
                 <input className="button is-primary" type="submit" value="Submit" />
             </form>
+             <div class="secondcontent">
+               
+            <br /><br /><br /><br />
+            <p> Sign-in your account and continues were you left off .</p>
+            <br /><br /><br /><br /><br /><br />
+            </div>
+             <footer class="site-footer">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-6">
+                <p>Ads Directory raised €1.3million for charity by donating a portion of ad revenue to causes selected by its staff</p>
+               <p> This project was created to express my knowledge on react </p>
+                <p>&copy; 2020 Created by EDWIN ODEH</p>
+              </div>
+              </div>
+              </div>
+              </div>
+
+                    
+                </footer>
+                </section>
         );
     }
 }
